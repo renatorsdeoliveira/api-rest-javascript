@@ -1,4 +1,4 @@
- const mongoose = require("mongoose")
+const mongoose = require("mongoose")
 
 const ProductSchema  = new mongoose.Schema({
     title: {
@@ -17,6 +17,6 @@ const ProductSchema  = new mongoose.Schema({
         type: Date,
         default: Date.now
     },
- });
+});
 
- mongoose.model('Product', ProductSchema);
+mongoose.model('Product', ProductSchema);
