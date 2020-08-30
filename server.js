@@ -7,16 +7,16 @@ const app = express();
 
 
 // Iniciando o DB
-mongoose.connect("mongodb://localhost:27017/nodeapi", { useNewUrlParser: true,  useUnifiedTopology: true})
-
+mongoose.connect("mongodb://localhost:27017/nodeapi", { useNewUrlParser: true,  useUnifiedTopology: true});
+require('./src/models/Product');// chamando o modulo
 
 
 // Primeira Rota
 app.get('/', (req, res) => {
-    res.send("Hello teste")
+    res.send("Hello teste");
 })
 
 
 
 // Porta
-app.listen(3000)
+app.listen(3000);
