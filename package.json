@@ -1,12 +1,19 @@
 {
   "name": "api-rest-javascript",
   "version": "1.0.0",
-  "description": "api rest javascript",
+  "description": "Api rest javascript",
   "main": "index.js",
   "repository": "https://github.com/renatorsdeoliveira/api-rest-javascript.git",
   "author": "Renato Oliveira",
   "license": "MIT",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.10.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
   }
 }
