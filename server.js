@@ -1,11 +1,13 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const requireDir = require("require-dir");
+const cors = require("cors")
 
 
 // Iniciando o APP
 const app = express();
 app.use(express.json());//permite o envio de arquivos json
+app.use(cors())
 
 
 // Iniciando o DB
